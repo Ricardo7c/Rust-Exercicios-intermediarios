@@ -1,5 +1,5 @@
 # Rust-Exercicios-intermediarios
-Exercicios gerados pelo chat GPT com fogo em Structs, Tuple structs, Enums e Matching.
+Exercicios gerados pelo chat GPT com foco em Structs, Tuple structs, Enums e Matching.
 
 ### Exercício 1: Definição e Instanciação de Structs
 
