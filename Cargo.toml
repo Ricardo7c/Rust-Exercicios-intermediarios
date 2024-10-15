@@ -1,0 +1,15 @@
+[dependencies]
+
+[package]
+name = "GPT_Exercicios"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "Ex01"
+path = "Ex01.rs"
+
+[[bin]]
+name = "Ex02"
+path = "Ex02.rs"
+
