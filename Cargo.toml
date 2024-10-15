@@ -29,3 +29,7 @@ path = "Ex05.rs"
 name = "Ex06"
 path = "Ex06.rs"
 
+[[bin]]
+name = "Ex07"
+path = "Ex07.rs"
+
