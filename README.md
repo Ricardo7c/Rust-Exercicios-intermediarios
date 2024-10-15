@@ -25,19 +25,11 @@ Crie um enum chamado `EstadoLampada` com as variantes `Ligada` e `Desligada`. Es
 
 Defina um enum `Mensagem` com as variantes `Texto(String)`, `Imagem(String, u32, u32)`, e `Video(String, u32)`. Crie uma função que recebe uma `Mensagem` e imprime informações baseadas na variante recebida.
 
-### Exercício 7: Matching com Enum
-
-Use o enum `Mensagem` do exercício anterior e escreva uma função que usa `match` para lidar com cada variante de forma diferente, exibindo os dados correspondentes.
-
-### Exercício 8: Structs Aninhadas
+### Exercício 7: Structs Aninhadas
 
 Crie duas structs: `Pessoa` (com os campos `nome` e `endereco`) e `Endereco` (com os campos `rua`, `numero` e `cidade`). Instancie uma `Pessoa` com um `Endereco` e imprima as informações de ambas as structs.
 
-### Exercício 9: Matching com Tuples
-
-Dada uma tuple `(i32, &str)`, escreva uma função que usa `match` para verificar o valor do primeiro item e imprime mensagens diferentes com base no valor.
-
-### Exercício 10: Enum e Structs Combinados
+### Exercício 8: Enum e Structs Combinados
 
 Crie um enum `Veiculo` com as variantes `Carro` e `Moto`, onde `Carro` contém uma struct `DetalhesCarro` e `Moto` contém uma struct `DetalhesMoto`. Escreva uma função que recebe um `Veiculo` e usa `match` para imprimir as informações detalhadas de cada variante.
 
