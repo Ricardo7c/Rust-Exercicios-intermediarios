@@ -1,5 +1,4 @@
-# Rust-Exercicios-intermediarios
-Exercicios gerados pelo chat GPT com foco em Structs, Tuple structs, Enums e Matching.
+# Structs, tuple structs, enums e matching.
 
 ### Exercício 1: Definição e Instanciação de Structs
 
@@ -34,3 +33,52 @@ Crie duas structs: `Pessoa` (com os campos `nome` e `endereco`) e `Endereco` (co
 Crie um enum `Veiculo` com as variantes `Carro` e `Moto`, onde `Carro` contém uma struct `DetalhesCarro` e `Moto` contém uma struct `DetalhesMoto`. Escreva uma função que recebe um `Veiculo` e usa `match` para imprimir as informações detalhadas de cada variante.
 
 Esses exercícios vão ajudar a reforçar seu aprendizado sobre structs, tuple structs, enums e matching. Boa prática!
+
+### Exercício 9: **Sistema de Notificações**
+
+Crie um `enum` chamado `Notification` que pode representar três tipos diferentes de notificações: `Email`, `SMS` e `PushNotification`. Cada variante deve conter diferentes informações:
+
+- `Email`: endereço de email e assunto da mensagem.
+- `SMS`: número de telefone e conteúdo do SMS.
+- `PushNotification`: nome do aplicativo e conteúdo da notificação.
+
+Implemente uma função chamada `send_notification` que recebe uma `Notification` e imprime a mensagem apropriada dependendo do tipo de notificação.
+
+### Exercício 10: **Estados de Pagamento**
+
+Crie um `enum` chamado `PaymentStatus` que represente os estados de um pagamento:
+
+- `Pending`: pagamento pendente.
+- `Completed`: pagamento completo com o valor pago.
+- `Failed`: pagamento falhou com uma mensagem de erro.
+
+Implemente uma função chamada `print_status` que recebe um `PaymentStatus` e imprime o estado atual do pagamento.
+
+### Exercício 11: **Tipos de Animal**
+
+Crie um `enum` chamado `Animal` que pode representar diferentes tipos de animais:
+
+- `Dog`: com uma string representando o nome.
+- `Cat`: com uma string representando o nome.
+- `Fish`: sem dados adicionais.
+
+Implemente uma função chamada `describe_animal` que recebe um `Animal` e imprime uma descrição do animal com base em seu tipo.
+
+### Exercício 12: **Sistema de Resultados**
+
+Implemente um `enum` chamado `Result` para representar os possíveis resultados de uma operação:
+
+- `Success`: contendo o valor do resultado.
+- `Error`: contendo uma mensagem de erro.
+
+Implemente uma função chamada `process_result` que recebe um `Result` e realiza uma ação diferente dependendo de ser sucesso ou erro, imprimindo o valor ou a mensagem de erro.
+
+### Exercício 13: **Controle de Tráfego**
+
+Crie um `enum` chamado `TrafficLight` que represente os três sinais de um semáforo:
+
+- `Red`
+- `Yellow`
+- `Green`
+
+Implemente uma função chamada `next_light` que recebe um `TrafficLight` e retorna o próximo sinal (por exemplo, se for `Red`, deve retornar `Green`).
