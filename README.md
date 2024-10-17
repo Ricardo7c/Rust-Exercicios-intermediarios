@@ -82,3 +82,18 @@ Crie um `enum` chamado `TrafficLight` que represente os três sinais de um semá
 - `Green`
 
 Implemente uma função chamada `next_light` que recebe um `TrafficLight` e retorna o próximo sinal (por exemplo, se for `Red`, deve retornar `Green`).
+
+### Exercício 14: Função Comparação de Strings
+Implemente uma função chamada `maior_str` que recebe duas referências para strings e retorna a maior delas (aquela com o maior comprimento). Use *lifetimes* para garantir que a função retorne uma referência que seja válida enquanto ambas as referências de entrada forem válidas.
+
+#### Requisitos:
+- A função deve receber duas referências para `&str` e retornar uma delas.
+- O compilador precisa saber que a referência retornada deve ter o mesmo tempo de vida que as entradas.
+
+
+### Exercício 15: Struct com Referências
+Crie uma struct chamada `Pessoa` que contenha referências para um nome e uma cidade, ambos do tipo `&str`. Depois, implemente uma função `informacoes` que receba uma instância de `Pessoa` e retorne uma string formatada com o nome e a cidade dessa pessoa.
+
+#### Requisitos:
+- A struct `Pessoa` deve armazenar referências, e os *lifetimes* dessas referências devem ser especificados corretamente.
+- A função `informacoes` deve aceitar uma referência para a `Pessoa` e retornar uma nova string com as informações.
