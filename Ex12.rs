@@ -1,25 +1,24 @@
 enum Sinal{
-    Red(String),
-    Yellow(String),
-    Green(String)
+    Red,
+    Yellow,
+    Green
 }
 
 fn next_light(x: Sinal) -> Sinal{
     match x {
-        Sinal::Red => return Sinal::Yellow,
-        Sinal::Yellow => return Sinal::Green,
-        Sinal::Green => return Sinal::Red
+        Sinal::Red => Sinal::Green,
+        Sinal::Green => Sinal::Yellow,
+        Sinal::Yellow => Sinal::Red
     }
 }
 
 fn main(){
-    let red = Sinal::Red("Vermelho!".to_owned());
-    let yellow = Sinal::Yellow("Amarelo".to_owned());
-    let green = Sinal::Green("Verde".to_owned());
+    let luz_atual = Sinal::Green;
 
-    let proxima = next_light(red);
-    println!("{}",proxima);
-
-
-
+    let proxima = next_light(luz_atual);
+    match proxima {
+        Sinal::Red => println!("Sinal vermelho: PARE!"),
+        Sinal::Yellow => println!("Sinal amarelo: Atenção"),
+        Sinal::Green => println!("Sinal verde: Pode seguir!"),
+    }
 }
