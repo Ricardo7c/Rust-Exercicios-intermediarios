@@ -1,18 +1,14 @@
-struct Pessoa<'a>{
-    nome: &'a str,
-    cidade: &'a str
-}
-
-fn informacoes<'a>(pessoa: &'a Pessoa) -> String{
-    format!("Nome: {}, Cidade: {}", pessoa.nome, pessoa.cidade)
+fn maior_str<'a>(a: &'a str, b:&'a str) -> &'a str{
+    if a.len() > b.len(){
+        a
+    }else{
+        b
+    }
 }
 
 fn main(){
-    let ricardo = Pessoa{
-        nome: "Ricardo",
-        cidade: "São Paulo"
-    };
-
-    let info = informacoes(&ricardo);
-    println!("{}", info);
+    let a = "Rust";
+    let b = "Language";
+    let resultado = maior_str(&a, &b);
+    println!("{}",resultado);
 }

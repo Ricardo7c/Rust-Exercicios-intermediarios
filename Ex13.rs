@@ -1,14 +1,24 @@
-fn maior_str<'a>(a: &'a str, b:&'a str) -> &'a str{
-    if a.len() > b.len(){
-        a
-    }else{
-        b
+enum Sinal{
+    Red,
+    Yellow,
+    Green
+}
+
+fn next_light(x: Sinal) -> Sinal{
+    match x {
+        Sinal::Red => Sinal::Green,
+        Sinal::Green => Sinal::Yellow,
+        Sinal::Yellow => Sinal::Red
     }
 }
 
 fn main(){
-    let a = "Rust";
-    let b = "Language";
-    let resultado = maior_str(&a, &b);
-    println!("{}",resultado);
+    let luz_atual = Sinal::Green;
+
+    let proxima = next_light(luz_atual);
+    match proxima {
+        Sinal::Red => println!("Sinal vermelho: PARE!"),
+        Sinal::Yellow => println!("Sinal amarelo: Atenção"),
+        Sinal::Green => println!("Sinal verde: Pode seguir!"),
+    }
 }

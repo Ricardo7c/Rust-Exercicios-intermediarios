@@ -1,19 +1,18 @@
-enum Result {
-    Success(String),
-    Error(String)
+enum Animal{
+    Dog(String),
+    Cat(String),
+    Fish,
 }
 
-fn process_result(x: Result){
-    match x {
-        Result::Success(conectado) => println!("{conectado}"),
-        Result::Error(falha) => println!("{falha}")
+fn describe_animal(animal: Animal){
+    match animal {
+        Animal::Dog(descricao) => println!("Cachorro: {}", descricao),
+        Animal::Cat(descricao) => println!("Gato: {}", descricao),
+        Animal::Fish => println!("Peixe: não possui uma descrição")
     }
 }
 
 fn main(){
-    let conectado = Result::Success("Conexão com o banco de dados realizada com sucesso!".to_owned());
-    let erro = Result::Error("Falha na conexão com o banco de dados".to_owned());
-
-    process_result(conectado);
-    process_result(erro);
+    let dog = Animal::Dog("Animal de quatro patas, peludo e bem amoroso".to_owned());
+    describe_animal(dog);
 }

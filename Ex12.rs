@@ -1,24 +1,19 @@
-enum Sinal{
-    Red,
-    Yellow,
-    Green
+enum Result {
+    Success(String),
+    Error(String)
 }
 
-fn next_light(x: Sinal) -> Sinal{
+fn process_result(x: Result){
     match x {
-        Sinal::Red => Sinal::Green,
-        Sinal::Green => Sinal::Yellow,
-        Sinal::Yellow => Sinal::Red
+        Result::Success(conectado) => println!("{conectado}"),
+        Result::Error(falha) => println!("{falha}")
     }
 }
 
 fn main(){
-    let luz_atual = Sinal::Green;
+    let conectado = Result::Success("Conexão com o banco de dados realizada com sucesso!".to_owned());
+    let erro = Result::Error("Falha na conexão com o banco de dados".to_owned());
 
-    let proxima = next_light(luz_atual);
-    match proxima {
-        Sinal::Red => println!("Sinal vermelho: PARE!"),
-        Sinal::Yellow => println!("Sinal amarelo: Atenção"),
-        Sinal::Green => println!("Sinal verde: Pode seguir!"),
-    }
+    process_result(conectado);
+    process_result(erro);
 }
