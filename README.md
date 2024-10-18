@@ -1,4 +1,4 @@
-# Structs, tuple structs, enums e matching.
+# Structs, tuple structs, enums, matching e lifetimes.
 
 ### Exercício 1: Definição e Instanciação de Structs
 
