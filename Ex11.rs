@@ -14,5 +14,9 @@ fn describe_animal(animal: Animal){
 
 fn main(){
     let dog = Animal::Dog("Animal de quatro patas, peludo e bem amoroso".to_owned());
+    let cat = Animal::Cat("Animal de quatro patas, peludo e bem ranzinza".to_owned());
+    let fish = Animal::Fish;
     describe_animal(dog);
+    describe_animal(cat);
+    describe_animal(fish);
 }
