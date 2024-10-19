@@ -69,24 +69,3 @@ path = "Ex15.rs"
 name = "Ex16"
 path = "Ex16.rs"
 
-[[bin]]
-name = "Ex17"
-path = "Ex17.rs"
-
-
-[[bin]]
-name = "ex16_mod"
-path = "ex16_mod.rs"
-
-[[bin]]
-name = "ex17_mod"
-path = "ex17_mod.rs"
-
-[[bin]]
-name = "Ex18"
-path = "Ex18.rs"
-
-[[bin]]
-name = "ex18_mod"
-path = "ex18_mod.rs"
-

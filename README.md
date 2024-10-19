@@ -97,3 +97,48 @@ Crie uma struct chamada `Pessoa` que contenha referências para um nome e uma ci
 #### Requisitos:
 - A struct `Pessoa` deve armazenar referências, e os *lifetimes* dessas referências devem ser especificados corretamente.
 - A função `informacoes` deve aceitar uma referência para a `Pessoa` e retornar uma nova string com as informações.
+
+Aqui estão 5 exercícios para te ajudar a fixar o uso de `Option` e `Result` em Rust:
+
+
+### Exercício 16: Conversão de String para Inteiro
+**Descrição**: Crie uma função que tenta converter uma string em um número inteiro. Se a conversão for bem-sucedida, a função deve retornar o número, caso contrário, ela deve retornar um `Result` com um erro explicando a falha.
+
+- **Entrada**: Uma `String`.
+- **Saída**: Um `Result<i32, String>`, onde o valor de sucesso é o número convertido, e o valor de erro é uma mensagem dizendo que a conversão falhou.
+
+---
+
+### Exercício 17: Busca em Lista de Nomes
+**Descrição**: Crie uma função que recebe uma lista de nomes (um `Vec<String>`) e um nome para buscar. A função deve retornar a posição do nome na lista, ou `None` caso o nome não seja encontrado.
+
+- **Entrada**: Um `Vec<String>` e um `String`.
+- **Saída**: Um `Option<usize>`, que indica a posição do nome na lista ou `None` se o nome não estiver presente.
+
+---
+
+### Exercício 18: Divisão Segura
+**Descrição**: Implemente uma função que realiza uma divisão segura entre dois números inteiros. A função deve retornar um `Result`, onde o valor de sucesso é o resultado da divisão e o valor de erro é uma mensagem indicando que não é possível dividir por zero.
+
+- **Entrada**: Dois números inteiros.
+- **Saída**: Um `Result<i32, String>`, onde o valor de sucesso é o resultado da divisão e o valor de erro é uma mensagem de erro.
+
+---
+
+### Exercício 19: Acesso a Elementos de uma Matriz
+**Descrição**: Crie uma função que tenta acessar um elemento de uma matriz (um `Vec<Vec<i32>>`). A função deve retornar um `Option<i32>`: o valor do elemento se ele existir, ou `None` se os índices fornecidos estiverem fora do limite da matriz.
+
+- **Entrada**: Uma matriz (um `Vec<Vec<i32>>`) e dois índices (linha e coluna).
+- **Saída**: Um `Option<i32>`, que representa o valor do elemento ou `None` caso os índices sejam inválidos.
+
+---
+
+### Exercício 20: Leitura de Arquivo
+**Descrição**: Crie uma função que tenta abrir e ler o conteúdo de um arquivo. Se o arquivo não for encontrado ou ocorrer algum erro ao abrir o arquivo, a função deve retornar um `Result` com uma mensagem de erro.
+
+- **Entrada**: O caminho de um arquivo (`String`).
+- **Saída**: Um `Result<String, String>`, onde o valor de sucesso é o conteúdo do arquivo e o valor de erro é uma mensagem de erro explicando o que deu errado.
+
+---
+
+Esses exercícios te ajudarão a praticar bastante o uso de `Option` e `Result`, tanto na manipulação de valores como no tratamento de erros em situações diversas.
