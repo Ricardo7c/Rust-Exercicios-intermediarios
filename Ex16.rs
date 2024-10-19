@@ -11,4 +11,10 @@ fn main(){
         Ok(valor) => println!("{}", valor+6),
         Err(erro) => println!("{}", erro)
     }
+
+    let num2 = String::from("Oi");
+    match convert(num2) {
+        Ok(valor) => println!("{}", valor+6),
+        Err(erro) => println!("{}", erro)
+    }
 }
