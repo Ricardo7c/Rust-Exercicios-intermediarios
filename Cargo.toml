@@ -73,3 +73,7 @@ path = "Ex16.rs"
 name = "Ex17"
 path = "Ex17.rs"
 
+[[bin]]
+name = "Ex18"
+path = "Ex18.rs"
+
