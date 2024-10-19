@@ -169,6 +169,3 @@ Aqui estão 5 exercícios para te ajudar a fixar o uso de `Option` e `Result` em
 - **Entrada**: O caminho de um arquivo (`String`).
 - **Saída**: Um `Result<String, String>`, onde o valor de sucesso é o conteúdo do arquivo e o valor de erro é uma mensagem de erro explicando o que deu errado.
 
----
-
-Esses exercícios te ajudarão a praticar bastante o uso de `Option` e `Result`, tanto na manipulação de valores como no tratamento de erros em situações diversas.
