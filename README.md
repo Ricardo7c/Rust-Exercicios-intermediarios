@@ -163,9 +163,16 @@ Aqui estão 5 exercícios para te ajudar a fixar o uso de `Option` e `Result` em
 
 ---
 
-### Exercício 20: Leitura de Arquivo
-**Descrição**: Crie uma função que tenta abrir e ler o conteúdo de um arquivo. Se o arquivo não for encontrado ou ocorrer algum erro ao abrir o arquivo, a função deve retornar um `Result` com uma mensagem de erro.
+### Exercício 20: Validação de Idade
 
-- **Entrada**: O caminho de um arquivo (`String`).
-- **Saída**: Um `Result<String, String>`, onde o valor de sucesso é o conteúdo do arquivo e o valor de erro é uma mensagem de erro explicando o que deu errado.
+**Descrição**: Crie uma função que recebe a idade de uma pessoa como um número inteiro e retorna um `Result<String, String>`. Se a idade for maior ou igual a 18, a função deve retornar uma mensagem de sucesso dizendo que a pessoa é maior de idade. Se a idade for menor que 18, a função deve retornar uma mensagem de erro informando que a pessoa ainda é menor de idade.
 
+### Entrada:
+- Um número inteiro representando a idade.
+
+### Saída:
+- Um `Result<String, String>`, onde:
+  - O valor de sucesso (`Ok`) é uma mensagem `"Maior de idade"`.
+  - O valor de erro (`Err`) é uma mensagem `"Menor de idade"`.
+
+```
