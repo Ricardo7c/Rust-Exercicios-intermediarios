@@ -174,5 +174,3 @@ Aqui estão 5 exercícios para te ajudar a fixar o uso de `Option` e `Result` em
 - Um `Result<String, String>`, onde:
   - O valor de sucesso (`Ok`) é uma mensagem `"Maior de idade"`.
   - O valor de erro (`Err`) é uma mensagem `"Menor de idade"`.
-
-```
